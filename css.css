@@ -152,6 +152,7 @@ h1 {
 
 .sample-header-section h2 {
     text-align: center;
+    transition: 0.5;
 }
 
 .sample-section-wrap {
