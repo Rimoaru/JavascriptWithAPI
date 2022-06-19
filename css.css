@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+    min-height: 800px;
+}
+
+.containerCard {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.containerCard .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: rgba(255, 255, 255, .8);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.containerCard .card:hover {
+    height: 340px;
+}
+
+.containerCard .card .image {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -40%;
+    left: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.containerCard .card .image img {
+    width: 260px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+.containerCard .card .content {
+    position: relative;
+    top: -140px;
+    padding: 10px 15px;
+    color: rgb(48, 48, 48);
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    font-family: "Poppins";
+}
+
+.containerCard .card .content table {
+    font-size: smaller;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+}
+
+.containerCard .card .content table td:first-child {
+    width: 80px;
+}
+
+.containerCard .card .content table tr:first-child td:last-child {
+    font-style: italic;
+}
+
+.containerCard .card .content table tr td:last-child {
+    padding-left: 2px;
+}
+
+.containerCard .card:hover .content {
+    margin-top: 30px;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+body {
+    margin: 0;
+}
+
+.sample-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-image: url("http://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sample-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: MidnightBlue;
+    opacity: 0.3;
+}
+
+.sample-header-section {
+    margin-bottom: 0;
+    position: relative;
+    padding: 15% 0 10%;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 50px;
+    transition: 0.5s;
+    text-align: center;
+    font-family: "poppins";
+}
+
+.sample-header-section h2 {
+    text-align: center;
+}
+
+.sample-section-wrap {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+
+.sample-section {
+    position: relative;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+.buttonWrap {
+    margin: 0 auto 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.buttonWrap .nextButton {
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    /* display: block; */
+}
+
+.nextButton:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer {
+    background-image: linear-gradient(to right, #614385 0%, #516395 51%, #614385 100%);
+    height: 170px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer h4 {
+    padding: 8px;
+    color: #e7e7e7;
+}
+
+.footer img {
+    width: 40px;
+    transition: .5s;
+}
+
+.footer img:hover {
+    width: 50px;
+    transition: .5s;
+}
+
+.footer p {
+    font-size: medium;
+    color: #cfcfcf;
+    padding: 10px 0 20px 0;
+}
