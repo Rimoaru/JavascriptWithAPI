@@ -150,6 +150,10 @@ h1 {
     font-family: "poppins";
 }
 
+#judul {
+    transition: 0.5s;
+}
+
 .sample-header-section h2 {
     text-align: center;
     transition: 0.5;

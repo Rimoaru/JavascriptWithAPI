@@ -1,8 +1,6 @@
 async function fetchData() {
-    0
     let result = await fetch("https://zoo-animal-api.herokuapp.com/animals/rand/10")
         .then(res => res.json())
-        // .then(json => document.getElementById("tampilDate").src = json.image_link)
         .then(json => {
             let data = '';
             for (let i = 0; i < json.length; i++) {
@@ -75,12 +73,12 @@ function scrollFunction() {
     if (document.body.scrollTop > header_height || document.documentElement.scrollTop > header_height) {
         document.getElementById("judul").style.visibility = "hidden";
         document.getElementById("judul").style.opacity = "0";
-        document.getElementById("judulDesk").style.visibility = "hidden";
-        document.getElementById("judulDesk").style.opacity = "0";
+        // document.getElementById("judulDesk").style.visibility = "hidden";
+        // document.getElementById("judulDesk").style.opacity = "0";
     } else {
         document.getElementById("judul").style.visibility = "visible";
         document.getElementById("judul").style.opacity = "1";
-        document.getElementById("judulDesk").style.visibility = "visible";
-        document.getElementById("judulDesk").style.opacity = "1";
+        // document.getElementById("judulDesk").style.visibility = "visible";
+        // document.getElementById("judulDesk").style.opacity = "1";
     }
 }
