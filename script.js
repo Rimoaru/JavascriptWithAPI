@@ -73,12 +73,8 @@ function scrollFunction() {
     if (document.body.scrollTop > header_height || document.documentElement.scrollTop > header_height) {
         document.getElementById("judul").style.visibility = "hidden";
         document.getElementById("judul").style.opacity = "0";
-        // document.getElementById("judulDesk").style.visibility = "hidden";
-        // document.getElementById("judulDesk").style.opacity = "0";
     } else {
         document.getElementById("judul").style.visibility = "visible";
         document.getElementById("judul").style.opacity = "1";
-        // document.getElementById("judulDesk").style.visibility = "visible";
-        // document.getElementById("judulDesk").style.opacity = "1";
     }
 }
